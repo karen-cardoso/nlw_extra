@@ -6,14 +6,14 @@
 
 body {
   background-image: url(./assets/bg.jpg);
-  background-position: top center;
+  background-position: top left;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #121214;
 }
 
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 160%;
 }
 
@@ -26,12 +26,7 @@ header div {
   width: 120px;
   margin: auto;
 
-  background-image: linear-gradient(
-    90deg,
-    #9572fc 0%,
-    #43e7ad 50.52%,
-    #e2d45c 100%
-  );
+  background: linear-gradient(90deg, #c91842 0%, #5cc2e2 100%);
 
   border-radius: 50%;
   padding: 4px;
@@ -63,18 +58,15 @@ main {
 section {
   color: #fff;
 
-  background-image: linear-gradient(
-    90deg,
-    #9572fc 0%,
-    #43e7ad 50.52%,
-    #e2d45c 100%
-  );
+  background: linear-gradient(90deg, #c91842 0%, #5cc2e2 100%),
+    linear-gradient(0deg, #262629, #262629);
+
   padding-top: 4px;
   border-radius: 10px;
 }
 
 section div {
-  background-color: #2a2634;
+  background-color: #262629;
   padding-top: 24px;
   padding: 32px;
   border-radius: 8px;
@@ -109,28 +101,43 @@ section ul li:hover {
   transform: scale(1.1);
 }
 
-.games-list img {
+.movies-list img {
   border-radius: 8px;
   width: 90px;
+
+  border: 1px solid #555555;
 }
 
-.channel-list img {
-  border-radius: 50%;
-  width: 70px;
+.series-list img {
+  border-radius: 8px;
+  width: 90px;
 
-  border: 1px solid #443e54;
+  border: 1px solid #555555;
+}
+
+footer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer p {
+  letter-spacing: -0.18px;
+  color: #a1a1aa;
+}
+footer span {
+  padding: o 10px;
 }
 
 /* CSS Animations */
 
 header div {
-  animation: fromTop 0.8s 0.2s backwards;
+  animation: fromTop 2s 0.2s backwards;
 }
 
 @keyframes fromTop {
   from {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;
@@ -139,7 +146,7 @@ header div {
 }
 
 main section {
-  animation: fromBottom 0.8s 0.2s backwards;
+  animation: fromRight 2s 0.2s backwards;
 }
 
 main section:nth-child(1) {
@@ -147,17 +154,31 @@ main section:nth-child(1) {
 }
 
 main section:nth-child(2) {
-  animation-delay: 0.4s;
+  animation-delay: 01s;
 }
 
 main section:nth-child(3) {
-  animation-delay: 0.8s;
+  animation-delay: 2s;
 }
 
-@keyframes fromBottom {
+@keyframes fromRight {
   from {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main footer p {
+  animation: FromBotton 5s 0.2s backwards;
+}
+
+@keyframes FromBotton {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
