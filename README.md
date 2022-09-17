@@ -1,4 +1,4 @@
-# Desafio Extra - NLW eSports - gitTrilha Explorer
+# Desafio Extra - NLW eSports_Trilha Explorer
 
 <!-- ![preview](#) -->
 
