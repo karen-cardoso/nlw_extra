@@ -15,6 +15,6 @@ Desafio Extra proposto ao término da NLW eSports. De acordo com layout apresent
 - HTML
 - CSS
 - Git e Github
-- Acessibilidade (inicialmente nas imagens utilizando as propriedades alt).<br><br>
+- Acessibilidade (inicialmente nas imagens utilizando a propriedade alt).<br><br>
 
 ### 👆 [CLIQUE AQUI PARA ACESSAR](https://karen-cardoso.github.io/nlw_extra/)
